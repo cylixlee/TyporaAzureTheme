@@ -1,0 +1,178 @@
+/* Inter-300 - latin */
+@font-face {
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 300;
+     src: local('Inter Light'), local('Inter-Light'),
+          url('Inter-Light.ttf') format('truetype');
+}
+
+/* Inter-300italic - latin */
+@font-face {
+     font-family: 'Inter';
+     font-style: italic;
+     font-weight: 300;
+     src: local('Inter Light Italic'), local('Inter-LightItalic'),
+          url('Inter-LightItalic.ttf') format('truetype');
+}
+
+/* Inter-regular - latin */
+@font-face {
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Inter'), local('Inter-Regular'),
+          url('Inter-Regular.ttf') format('truetype');
+}
+
+/* Inter-italic - latin */
+@font-face {
+     font-family: 'Inter';
+     font-style: italic;
+     font-weight: 400;
+     src: local('Inter Italic'), local('Inter-Italic'),
+          url('Inter-Italic.ttf') format('truetype');
+}
+
+/* Inter-500 - latin */
+@font-face {
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 500;
+     src: local('Inter Medium'), local('Inter-Medium'),
+          url('Inter-Medium.ttf') format('truetype');
+}
+
+/* Inter-500italic - latin */
+@font-face {
+     font-family: 'Inter';
+     font-style: italic;
+     font-weight: 500;
+     src: local('Inter Medium Italic'), local('Inter-MediumItalic'),
+          url('Inter-MediumItalic.ttf') format('truetype');
+}
+
+/* Inter-700 - latin */
+@font-face {
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 700;
+     src: local('Inter Bold'), local('Inter-Bold'),
+          url('Inter-Bold.ttf') format('truetype');
+}
+
+/* Inter-700italic - latin */
+@font-face {
+     font-family: 'Inter';
+     font-style: italic;
+     font-weight: 700;
+     src: local('Inter Bold Italic'), local('Inter-BoldItalic'),
+          url('Inter-BoldItalic.ttf') format('truetype');
+}
+
+/* Inter-900 - latin */
+@font-face {
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 900;
+     src: local('Inter Black'), local('Inter-Black'),
+          url('Inter-Black.ttf') format('truetype');
+}
+
+/* Inter-900italic - latin */
+@font-face {
+     font-family: 'Inter';
+     font-style: italic;
+     font-weight: 900;
+     src: local('Inter Black Italic'), local('Inter-BlackItalic'),
+          url('Inter-BlackItalic.ttf') format('truetype');
+}
+
+
+
+
+
+/* HONOR Sans CN-300 - latin & chinese */
+@font-face {
+     font-family: 'HONOR Sans CN';
+     font-style: normal;
+     font-weight: 300;
+     src: local('HONOR Sans CN Light'), local('HONORSansCN-Light'),
+          url('HONORSansCN-Light.ttf') format('truetype');
+}
+
+/* HONOR Sans CN-regular - latin & chinese */
+@font-face {
+     font-family: 'HONOR Sans CN';
+     font-style: normal;
+     font-weight: 400;
+     src: local('HONOR Sans CN'), local('HONORSansCN-Regular'),
+          url('HONORSansCN-Regular.ttf') format('truetype');
+}
+
+/* HONOR Sans CN-500 - latin & chinese */
+@font-face {
+     font-family: 'HONOR Sans CN';
+     font-style: normal;
+     font-weight: 500;
+     src: local('HONOR Sans CN Medium'), local('HONORSansCN-Medium'),
+          url('HONORSansCN-Medium.ttf') format('truetype');
+}
+
+/* HONOR Sans CN-700 - latin & chinese */
+@font-face {
+     font-family: 'HONOR Sans CN';
+     font-style: normal;
+     font-weight: 700;
+     src: local('HONOR Sans CN DemiBold'), local('HONORSansCN-DemiBold'),
+          url('HONORSansCN-DemiBold.ttf') format('truetype');
+}
+
+/* HONOR Sans CN-900 - latin & chinese */
+@font-face {
+     font-family: 'HONOR Sans CN';
+     font-style: normal;
+     font-weight: 900;
+     src: local('HONOR Sans CN Bold'), local('HONORSansCN-Bold'),
+          url('HONORSansCN-Bold.ttf') format('truetype');
+}
+
+
+
+
+
+/* Courier Prime-400 - latin */
+@font-face {
+     font-family: 'Courier Prime';
+     font-style: normal;
+     font-weight: 400;
+     src: local('Courier Prime'), local('CourierPrime'),
+          url('Courier Prime.ttf') format('truetype');
+}
+
+/* Courier Prime-400 italic - latin */
+@font-face {
+     font-family: 'Courier Prime';
+     font-style: italic;
+     font-weight: 400;
+     src: local('Courier Prime Italic'), local('CourierPrime-Italic'),
+          url('Courier Prime Italic.ttf') format('truetype');
+}
+
+/* Courier Prime-700 - latin */
+@font-face {
+     font-family: 'Courier Prime';
+     font-style: normal;
+     font-weight: 700;
+     src: local('Courier Prime Bold'), local('CourierPrime-Bold'),
+          url('Courier Prime Bold.ttf') format('truetype');
+}
+
+/* Courier Prime-700 italic - latin */
+@font-face {
+     font-family: 'Courier Prime';
+     font-style: italic;
+     font-weight: 700;
+     src: local('Courier Prime Bold Italic'), local('CourierPrime-BoldItalic'),
+          url('Courier Prime Bold Italic.ttf') format('truetype');
+}
