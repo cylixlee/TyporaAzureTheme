@@ -1,4 +1,4 @@
-#Azure: 适用于 Typora 的定制主题
+# Azure: 适用于 Typora 的定制主题
 
 此主题由 [Gitbook](https://github.com/h16nning/typora-gitbook-theme) 主题派生而来，主要修改集中于中文字形的改变及对某些样式的优化。代码块部分则使用 [Fluent](https://github.com/li3zhen1/Fluent-Typora) 主题的相关设置。
 
