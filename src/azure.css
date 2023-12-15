@@ -51,6 +51,18 @@
     --note-fill: #fff5ad;
     --note-border: #aaaa33;
 
+    --color-cm-keyword: #3b78e7;
+    --color-cm-attr: #9c27b0;
+    --color-cm-comment: #6a737d;
+    --color-cm-string: #0d904f;
+    --color-cm-operator: #d81b60;
+    --color-cm-number: #d81b60;
+    --color-cm-meta: #6933b1;
+    --color-cm-builtin: #e36209;
+    --color-cm-v3: #43a8b3;
+    --color-cm-v: #c53929;
+    --color-cm-link: #24a3c3;
+
     /*****************************/
 
     --font-family: "Inter", "HONOR Sans CN", sans-serif;
@@ -172,7 +184,7 @@ h1 {
     font-weight: 700;
     line-height: 1.5;
     margin-top: 3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     padding-bottom: 0.2rem;
     border-bottom: solid 3px var(--borders);
 }
@@ -498,191 +510,28 @@ table tr td:last-child {
 
 /*CODE*/
 
-.CodeMirror {
-    padding: 1rem;
-    font-family: var(--code-font-family);
+.CodeMirror-lines {
+    padding-left: 4px;
 }
 
-.cm-s-inner .CodeMirror-gutters {
-    background-color: none;
-    border-right: none;
-    border-radius: 0px;
-    color: white;
-    height: 100%;
-}
-
-.CodeMirror.cm-s-typora-default div.CodeMirror-cursor {
-    border-left: solid 2px var(--light-text-color-darker);
-}
-
-.CodeMirror.cm-s-typora-default .CodeMirror-activeline-background {
-    background-color: var(--codeboxes-lighter);
-}
-
-.cm-s-inner .CodeMirror-cursor {
-    color: white;
-    border-left: solid 1px white;
-}
-
-.CodeMirror-linenumber {
-    color: var(--bg-color);
-    opacity: 0.6;
-}
-
-.cm-s-inner .CodeMirror-line::selection,
-.cm-s-inner .CodeMirror-line::-moz-selection,
-.cm-s-inner .CodeMirror-line > span::selection,
-.cm-s-inner .CodeMirror-line > span::-moz-selection,
-.cm-s-inner .CodeMirror-line > span > span::selection,
-.cm-s-inner .CodeMirror-line > span > span::-moz-selection {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.cm-error {
-    color: var(--danger-color);
-}
-
-.cm-s-inner span.cm-comment,
-.cm-s-typora-default span.cm-comment,
-.cm-s-typora-default span.cm-code {
-    color: #9daab6;
-}
-
-.cm-s-inner span.cm-string,
-.cm-s-inner span.cm-string-2 {
-    color: #71a7ff;
-}
-
-.cm-s-inner span.cm-number {
-    color: #ff9d3d;
-}
-
-.cm-s-inner span.cm-variable,
-.cm-s-inner span.cm-variable-2 {
-    color: white;
-}
-
-.cm-s-inner span.cm-def {
-    color: white;
-}
-
-.cm-s-inner span.cm-operator {
-    color: #ff9d3d;
-}
-
-.cm-s-inner span.cm-keyword {
-    color: #61e3a5;
-}
-
-.cm-s-inner span.cm-atom {
-    color: #bd93f9;
-}
-
-.cm-s-inner span.cm-meta {
-    color: #f8f8f2;
-}
-
-.cm-s-inner span.cm-link,
-.cm-s-typora-default .cm-link {
-    color: var(--primary-color);
-}
-
-.cm-s-inner span.cm-tag,
-.cm-s-inner .cm-header {
-    color: #b4f6d6;
-}
-
-.cm-s-inner span.cm-attribute {
-    color: #ff9d3d;
-}
-
-.cm-s-inner span.cm-qualifier,
-.cm-s-inner span.cm-type,
-.cm-s-inner span.cm-variable-3 {
-    color: #82ee9d;
-}
-
-.cm-s-inner span.cm-property {
-    color: #ffd6ad;
-}
-
-.cm-s-inner span.cm-builtin {
-    color: #8ffaaa;
-}
-
-.md-fences.md-focus .cm-s-inner .CodeMirror-activeline-background {
-    background: none;
-}
-
-.cm-s-inner .CodeMirror-selected,
-.cm-s-inner .CodeMirror-selectedtext {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-.cm-s-inner .cm-search-hit.CodeMirror-selected, .cm-s-inner .cm-search-hit.CodeMirror-selectedtext {
-    background: var(--select-text-bg-color)!important;
-} /* removes black background from code search selected */
-
-.cm-s-typora-default .cm-header,
-.cm-s-typora-default .cm-property {
-    color: white;
-    font-weight: 400;
-}
-
-.md-fences .code-tooltip {
-    box-shadow: rgba(116, 129, 141, 0.08) 0px 2px 6px 0px;
-    border: solid 1px var(--borders);
-    border-radius: 0.3rem;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    width: 15rem;
-    height: 2.5rem;
-    bottom: -3rem;
-    padding: 0.1875rem;
-}
-
-.md-fences .code-tooltip .ty-input {
-    border: solid 1px var(--borders);
-    height: 2rem;
-    line-height: 2rem;
-    margin: 0rem;
-    padding-left: 0.5rem !important;
-    text-align: left;
-    display: block;
-    font-size: 0.8rem;
-    font-weight: 600;
-    font-family: var(--font-family);
-    transition-duration: 0.3s;
-    transition-property: border;
-}
-
-.md-fences .code-tooltip .ty-input:focus {
-    border-color: var(--primary-color);
-}
-
-.html-for-mac .ty-cm-lang-input:empty:after {
-    left: 0.5rem;
-}
-
-.autoComplt-list li,
-.fences-auto-suggest li {
-    font-weight: 500;
-    transition-duration: 0.3s;
-    transition-property: background-color, color;
-}
-
-.autoComplt-list li.active,
-.fences-auto-suggest li:hover {
+.code-tooltip {
+    border: 1px solid var(--borders);
     background-color: var(--boxes);
-    color: var(--primary-color);
+    border-radius: 4px;
+    font-family: var(--code-font-family);
+    box-shadow: none!important;
 }
 
-.md-fences,
-tt {
-    border-radius: 0.3rem;
-    color: white;
-    padding: 1.5rem;
-    font-size: 0.8rem;
+.md-fences, tt {
+    border: 1.25px solid var(--borders);
+    background-color: var(--boxes);
+    border-radius: 4px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-size: 0.9em;
+    font-family: var(--monospace);
+    font-variant-ligatures: common-ligatures!important;
+    font-feature-settings: "liga" 1!important;
 }
 
 code {
@@ -694,23 +543,88 @@ code {
     -webkit-box-decoration-break: clone;
 }
 
-.md-fences div.CodeMirror-cursor,
-#typora-source div.CodeMirror-cursor {
-    border-left: solid 1px white;
-}
-
 .md-fences {
-    margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+    margin-bottom: 15px;
+    margin-top: 15px;
     padding-top: 8px;
     padding-bottom: 6px;
-    background-color: var(--codeboxes);
 }
 
-#typora-source {
-    background-color: var(--codeboxes);
-    color: white;
-    font-size: 0.9rem;
+.cm-keyword {
+    color: var(--color-cm-keyword)!important;
+    font-weight: 700!important;
+}
+
+.cm-variable {
+    color: var(--color-cm-v)!important;
+}
+
+.cm-tag {
+    color: var(--color-cm-keyword)!important;
+    font-weight: 700!important;
+}
+
+.cm-variable-3, .cm-variable-2 {
+    color: var(--color-cm-v3)!important;
+    font-weight: 700!important;
+}
+
+.cm-def {
+    color: var(--color-cm-attr)!important;
+}
+
+.cm-attribute {
+    color: var(--color-cm-attr)!important
+}
+
+.cm-comment, .md-comment, .md-meta {
+    color: var(--color-cm-comment)!important;
+}
+
+.cm-string {
+    color: var(--color-cm-string)!important;
+    font-variant-ligatures: common-ligatures!important;
+}
+
+.cm-link {
+    color: var(--color-cm-link)!important;
+}
+
+.cm-type {
+    color: var(--color-cm-v3);
+}
+
+.cm-property {
+    color: var(--color-cm-v3)!important;
+}
+
+.cm-tag:not(.cm-bracket) {
+    font-weight: 700;
+}
+
+.cm-operator {
+    color: var(--color-cm-operator)!important;
+}
+
+.cm-number {
+    color: var(--color-cm-number)!important;
+}
+
+.cm-meta {
+    color: var(--color-cm-meta)!important;
+    font-weight: 700!important;
+}
+
+.cm-builtin {
+    color: var(--color-cm-builtin)!important;
+}
+
+.cm-header, .cm-header-1 {
+    color: var(--font-family)!important;
+}
+
+.cm-atom {
+    color: var(--color-cm-builtin)!important;
 }
 
 /*DIAGRAMS*/
@@ -2486,5 +2400,9 @@ u {
 }
 
 del {
-    color: gray;
+    color: var(--light-text-color-darker);
+}
+
+footer {
+    color: var(--primary-color);
 }
